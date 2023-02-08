@@ -11,6 +11,11 @@
 		4421741B299336530001FD83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421741A299336530001FD83 /* ContentView.swift */; };
 		4421741D299336540001FD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4421741C299336540001FD83 /* Assets.xcassets */; };
 		44217420299336540001FD83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4421741F299336540001FD83 /* Preview Assets.xcassets */; };
+		4421742729933D070001FD83 /* Authenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421742629933D070001FD83 /* Authenticated.swift */; };
+		4421742929933D9B0001FD83 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421742829933D9B0001FD83 /* Login.swift */; };
+		4421742B29933DA40001FD83 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421742A29933DA40001FD83 /* Credentials.swift */; };
+		4421742D29933DC60001FD83 /* AppKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421742C29933DC60001FD83 /* AppKeychain.swift */; };
+		4421742F299343450001FD83 /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421742E299343450001FD83 /* LocalAuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		4421741A299336530001FD83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4421741C299336540001FD83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4421741F299336540001FD83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4421742629933D070001FD83 /* Authenticated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticated.swift; sourceTree = "<group>"; };
+		4421742829933D9B0001FD83 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4421742A29933DA40001FD83 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		4421742C29933DC60001FD83 /* AppKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKeychain.swift; sourceTree = "<group>"; };
+		4421742E299343450001FD83 /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				44217418299336530001FD83 /* FaceIDDemoApp.swift */,
 				4421741A299336530001FD83 /* ContentView.swift */,
+				4421742E299343450001FD83 /* LocalAuthenticationService.swift */,
+				4421742829933D9B0001FD83 /* Login.swift */,
+				4421742A29933DA40001FD83 /* Credentials.swift */,
+				4421742629933D070001FD83 /* Authenticated.swift */,
+				4421742C29933DC60001FD83 /* AppKeychain.swift */,
 				4421741C299336540001FD83 /* Assets.xcassets */,
 				4421741E299336540001FD83 /* Preview Content */,
 			);
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4421741B299336530001FD83 /* ContentView.swift in Sources */,
+				4421742729933D070001FD83 /* Authenticated.swift in Sources */,
 				44217419299336530001FD83 /* FaceIDDemoApp.swift in Sources */,
+				4421742B29933DA40001FD83 /* Credentials.swift in Sources */,
+				4421742929933D9B0001FD83 /* Login.swift in Sources */,
+				4421742F299343450001FD83 /* LocalAuthenticationService.swift in Sources */,
+				4421742D29933DC60001FD83 /* AppKeychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +290,13 @@
 				DEVELOPMENT_TEAM = 9KQFA8U4DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "I wAnT aLL of ThE DaTa!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +321,13 @@
 				DEVELOPMENT_TEAM = 9KQFA8U4DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "I wAnT aLL of ThE DaTa!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

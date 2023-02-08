@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FaceIDDemoApp: App {
+    var authenticated = Authenticated()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authenticated)
         }
     }
 }
