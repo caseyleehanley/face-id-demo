@@ -8,9 +8,11 @@
 import Foundation
 
 class AppKeychain {
+    static let account = "FaceIDDemo2"
+    
     static func getValue(for service: String) -> String {
         if let value = try? getGenericPasswordFor(
-            account: "FaceIDDemo",
+            account: account,
             service: service) {
             return value
         }
@@ -20,7 +22,7 @@ class AppKeychain {
     static func updateValue(for service: String, with value: String) {
         do {
             try storeGenericPasswordFor(
-                account: "FaceIDDemo",
+                account: account,
                 service: service,
                 password: value)
         } catch let error as AppKeychainError {
